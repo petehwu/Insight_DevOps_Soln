@@ -67,18 +67,14 @@ While technologies like Kubernetes are quite powerful, they're likely overkill f
 
 
 ## SPOILER ALERT 
-Solution below
-&NewLine;
+&nbsp;
+&nbsp
 
-&NewLine;
-&NewLine;
-&NewLine;
-&NewLine;
-&NewLine;
-&NewLine;
-&NewLine;
-&NewLine;
-#### Peter Wu Solution
+
+
+
+
+#### Solution
 Summary of issues discovered
 1) nginx port was mapped incorrectly
 2) flask app was running on the wrong port
