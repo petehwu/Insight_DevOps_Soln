@@ -65,3 +65,48 @@ No, you should focus on the functionality. Your engineering team will bring on a
 ### Should I use orchestration tools like Kubernetes?
 While technologies like Kubernetes are quite powerful, they're likely overkill for the simple application in this puzzle. We recommend that you stick to Docker Compose for this puzzle.
 
+
+## SPOILER ALERT 
+Solution below
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+#### Peter Wu Solution
+Summary of issues discovered
+1) nginx port was mapped incorrectly
+2) flask app was running on the wrong port
+3) nginx config file set up incorrectly causing incorrect redirect URL to be generated
+4) added port 8080 to the header in order for redirect to work correctly.  Not sure if this is the best way to handle
+
+### Other Thoughts
+I'm not sure if I needed to do #4 from above to add port 8080 because in an actual production environment we would most likely just map to port 80, in which case adding this port would not be necessary.
+
+The application server is currently using the built-in Flask server.  That is ok for testing but would be inappropriate in a production setting.  Suggest gunicorn or uwsgi would be more appropriate for production.
