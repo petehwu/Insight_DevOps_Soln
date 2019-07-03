@@ -67,8 +67,37 @@ While technologies like Kubernetes are quite powerful, they're likely overkill f
 
 
 ## SPOILER ALERT
-solution below      
+My purposed solution posted below.      
 .         
+.         
+.         
+.         
+.        
+.        
+.          
+.          
+.        
+.        
+.          
+.          
+.         
+.        
+.        
+.          
+.          
+.        
+.        
+.          
+.          
+.         
+.        
+.        
+.          
+.          
+.        
+.        
+.          
+.          
 .         
 .        
 .        
