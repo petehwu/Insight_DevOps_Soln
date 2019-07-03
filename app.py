@@ -25,9 +25,11 @@ def success():
  
     qry = db_session.query(Items)
     results = qry.all()
+    rr = ["{}_{}_{}_{}_{}".format(r.id, r.name, r.quantity, r.description, r.date_added) for r in results]
+    outStr = "\n".join(rr)
 
-    return str(results)
+    return outStr
   
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=5001)
