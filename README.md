@@ -66,14 +66,26 @@ No, you should focus on the functionality. Your engineering team will bring on a
 While technologies like Kubernetes are quite powerful, they're likely overkill for the simple application in this puzzle. We recommend that you stick to Docker Compose for this puzzle.
 
 
-## SPOILER ALERT 
-&nbsp;
-&nbsp
-
-
-
-
-
+## SPOILER ALERT
+solution below
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
+.&nbsp;
 #### Solution
 Summary of issues discovered
 1) nginx port was mapped incorrectly
