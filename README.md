@@ -97,19 +97,9 @@ My purposed solution posted below.
 .        
 .        
 .          
-.          
-.         
-.        
-.        
-.          
-.          
-.        
-.        
-.          
-.          
 ### Solution
 Summary of issues discovered
-1) nginx port was mapped incorrectly
+1) nginx port was mapped incorrectly. Port mapping was reversed.  port 8080 of docker container mapped to port 80 of local machine
 2) flask app was running on the wrong port
 3) nginx config file set up incorrectly causing incorrect redirect URL to be generated
 4) added port 8080 to the header in order for redirect to work correctly.  Not sure if this is the best way to handle
