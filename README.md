@@ -102,9 +102,7 @@ Summary of issues discovered
 1) nginx port was mapped incorrectly. Port mapping was reversed.  port 8080 of docker container mapped to port 80 of local machine
 2) flask app was running on the wrong port
 3) nginx config file set up incorrectly causing incorrect redirect URL to be generated
-4) added port 8080 to the header in order for redirect to work correctly.  Not sure if this is the best way to handle
+4) Used $http\_host instead of $host to get the port number so no hardcoding needed.
 
 ### Other Thoughts
-I'm not sure if I needed to do #4 from above to add port 8080 because in an actual production environment we would most likely just map to port 80, in which case adding this port would not be necessary.
-
 The application server is currently using the built-in Flask server.  That is ok for testing but would be inappropriate in a production setting.  Suggest gunicorn or uwsgi would be more appropriate for production.
